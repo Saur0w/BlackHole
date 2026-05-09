@@ -9,7 +9,7 @@ export default function Blackhole() {
 
   useFrame(({ clock }) => {
     if (meshRef.current) {
-      meshRef.current.rotation.y = clock.getElapsedTime() * 0.1;
+      meshRef.current.rotation.y = clock.getElapsedTime() * 0.02;
     }
   });
 
