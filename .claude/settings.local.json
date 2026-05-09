@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(Get-Process -Name node -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object Id,ProcessName,CPU)",
+      "Bash(netstat -ano)",
+      "Bash(Select-String \":3000\")",
+      "Bash(taskkill /PID 17180 /F)",
+      "Bash(powershell -Command \"Stop-Process -Id 17180 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1\")"
+    ]
+  }
+}
